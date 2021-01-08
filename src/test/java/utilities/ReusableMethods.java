@@ -7,6 +7,8 @@ import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.FluentWait;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import pages.interaction.DraggablePage;
+import pages.interaction.DroppablePage;
 
 import java.io.File;
 import java.io.IOException;
@@ -18,7 +20,9 @@ import java.util.Random;
 import java.util.concurrent.TimeUnit;
 import java.util.function.Function;
 
+
 public class ReusableMethods {
+
     public static String getScreenshot(String name) throws IOException {
         String date = new SimpleDateFormat("yyyyMMddhhmmss").format(new Date());
         TakesScreenshot ts = (TakesScreenshot) Driver.getDriver();
@@ -125,5 +129,16 @@ public class ReusableMethods {
             data = data + (char)(x);
         }
         return data;
+    }
+    //--------signIn exception catch------------//
+    public static void signInException(){
+        DraggablePage pageElements = new DraggablePage();
+        try {
+            pageElements.signInLink.click();
+            pageElements.usernameEntry.sendKeys(ConfigReader.getProperty("way2AutomationUsername"));
+            pageElements.passwordEntry.sendKeys(ConfigReader.getProperty("way2AutomationUserPassword"));
+            pageElements.submitButton.click();
+        } catch (org.openqa.selenium.NoSuchElementException e){
+        }
     }
 }
