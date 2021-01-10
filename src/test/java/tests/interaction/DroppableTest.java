@@ -14,7 +14,7 @@ public class DroppableTest {
     DroppablePage droppablePage = new DroppablePage();
     Actions action = new Actions(Driver.getDriver());
 
-    @Test
+   @Test
     public void dropableDefaultFunctionality (){
         Driver.getDriver().get(ConfigReader.getProperty("way2Automation"));
         ReusableMethods.signInException();

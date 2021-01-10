@@ -75,8 +75,8 @@ public class KitapyurduTests {
         pages.sucVeCeza1.click();
         Assert.assertEquals(pages.productPrice.getText(),"9,00");
         Driver.getDriver().navigate().back();
-        actions.sendKeys(Keys.PAGE_DOWN).perform();
-        ReusableMethods.waitFor(2);
+//        actions.sendKeys(Keys.PAGE_DOWN).perform();
+//        ReusableMethods.waitFor(2);
         pages.sucVeCeza2.click();
         Assert.assertEquals(pages.productPrice.getText(),"7,49");
     }
@@ -89,7 +89,7 @@ public class KitapyurduTests {
         pages.sucVeCeza1.click();
         pages.addToBag.click();
         Driver.getDriver().navigate().back();
-        actions.sendKeys(Keys.PAGE_DOWN).perform();
+//        actions.sendKeys(Keys.PAGE_DOWN).perform();
         ReusableMethods.waitFor(2);
         pages.sucVeCeza2.click();
         pages.addToBag.click();
