@@ -11,7 +11,7 @@ import utilities.Driver;
 import utilities.ReusableMethods;
 
 
-public class KitapyurduTests {
+public class KitapyurduTest {
 
     KitapyurduPages pages = new KitapyurduPages(Driver.getDriver());
     Actions actions = new Actions(Driver.getDriver());
