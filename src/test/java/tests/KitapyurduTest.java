@@ -5,7 +5,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-import pages.KitapyurduPages;
+import pages.KitapyurduPage;
 import utilities.ConfigReader;
 import utilities.Driver;
 import utilities.ReusableMethods;
@@ -13,7 +13,7 @@ import utilities.ReusableMethods;
 
 public class KitapyurduTest {
 
-    KitapyurduPages pages = new KitapyurduPages(Driver.getDriver());
+    KitapyurduPage pages = new KitapyurduPage(Driver.getDriver());
     Actions actions = new Actions(Driver.getDriver());
 
 //    @Test

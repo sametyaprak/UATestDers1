@@ -7,8 +7,8 @@ import org.openqa.selenium.support.PageFactory;
 
 import java.util.List;
 
-public class KitapyurduPages {
-    public KitapyurduPages(WebDriver driver){
+public class KitapyurduPage {
+    public KitapyurduPage(WebDriver driver){
         PageFactory.initElements(driver,this);
     }
     @FindBy(xpath = "(//span[@class='RveJvd snByac'])[3]")
