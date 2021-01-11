@@ -28,6 +28,10 @@ public class DraggablePage {
     public WebElement draggableBox1;
     @FindBy(id = "draggable2")
     public WebElement draggableBox2;
+    @FindBy(xpath = "//a[@href='#example-1-tab-3']")
+    public WebElement curcorStyleLink;
+    @FindBy(xpath = "//p[.='I will always stick to the center (relative to the mouse)']")
+    public WebElement cursorStyleBox1;
 
 
 }

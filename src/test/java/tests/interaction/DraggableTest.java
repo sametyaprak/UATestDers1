@@ -56,5 +56,20 @@ public class DraggableTest {
         Assert.assertTrue(pageElements.draggableBox2.getAttribute("style").contains("top: 0px"));
         Driver.getDriver().switchTo().defaultContent();
     }
+    @Test
+    public void Test03CursorStyle(){
+        Driver.getDriver().get(ConfigReader.getProperty("way2Automation"));
+        ReusableMethods.signInException();
+        action.sendKeys(Keys.PAGE_DOWN).perform();
+        ReusableMethods.waitFor(2);
+        pageElements.draggableLink.click();
+        ReusableMethods.waitFor(1);
+        pageElements.curcorStyleLink.click();
+        Driver.getDriver().switchTo().frame(2);
+        action.clickAndHold(pageElements.cursorStyleBox1).perform();
+        action.moveByOffset(100,100).perform();
+
+
+    }
 
 }
