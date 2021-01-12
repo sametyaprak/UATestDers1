@@ -1,12 +1,8 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
 <suite name="Suite 1" verbose="1">
-  <test name="test">
-      <classes>
-          <class name="tests.interaction.DraggableTest"></class>
-          <class name="tests.interaction.ResizableTest"></class>
-          <class name="tests.interaction.DroppableTest"></class>
-          <class name="tests.JobHeroTest"></class>
-          <class name="tests.KitapyurduTest"></class>
-      </classes>
-  </test>
+    <test name="Check Price Test Suite">
+        <classes>
+            <class name="tests.JobHeroTest"></class>
+        </classes>
+    </test>
 </suite>
