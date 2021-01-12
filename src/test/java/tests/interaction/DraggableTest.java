@@ -39,6 +39,7 @@ public class DraggableTest {
         Driver.getDriver().get(ConfigReader.getProperty("way2Automation"));
         ReusableMethods.signInException();
         action.sendKeys(Keys.PAGE_DOWN).perform();
+        ReusableMethods.waitFor(2);
         pageElements.draggableLink.click();
         ReusableMethods.waitFor(1);
         pageElements.constrainMovement.click();
