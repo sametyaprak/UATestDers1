@@ -18,7 +18,7 @@ public class JobHeroTest {
 //    gelen sayfada 3 tane resume ornegi oldugunu dogrulayiniz
 
     JobHeroPage jobHeroPage = new JobHeroPage();
-        @Test
+    @Test
     public void test01(){
         Driver.getDriver().get(ConfigReader.getProperty("jobhero"));
         jobHeroPage.resumesLink.click();
