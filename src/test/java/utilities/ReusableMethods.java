@@ -7,8 +7,8 @@ import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.FluentWait;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import pages.interaction.DraggablePage;
-import pages.interaction.DroppablePage;
+import pages.DraggablePage;
+
 
 import java.io.File;
 import java.io.IOException;
