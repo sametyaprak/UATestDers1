@@ -7,7 +7,6 @@ import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import pages.MenuPage;
-import pages.SelectablePage;
 import utilities.ConfigReader;
 import utilities.Driver;
 import utilities.ReusableMethods;
@@ -52,10 +51,10 @@ public class MenuTest {
             actions.moveToElement(menuPage.allHovers.get(arr1[i])).perform();
         }
         for (int i = 0; i < arr3.length; i++) {
-            ReusableMethods.waitFor(1);
+            ReusableMethods.waitFor(2);
             actions.moveToElement(menuPage.allHovers.get(arr3[i])).perform();
             for (int j = 0; j < arr2.length; j++) {
-                ReusableMethods.waitFor(1);
+                ReusableMethods.waitFor(3);
                 actions.moveToElement(menuPage.allHovers.get(arr3[i])).moveToElement(arr2[j]).perform();
             }
         }
