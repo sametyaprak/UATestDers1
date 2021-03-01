@@ -8,9 +8,7 @@ import org.testng.annotations.Test;
 import tests.easiyseleniumtest.DropdownTest;
 import utilities.Driver;
 import utilities.ReusableMethods;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
+import java.util.*;
 
 public class DropdownPage {
 
