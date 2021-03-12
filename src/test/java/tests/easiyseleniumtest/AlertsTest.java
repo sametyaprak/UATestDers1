@@ -1,31 +1,30 @@
 package tests.easiyseleniumtest;
 
 import org.openqa.selenium.Keys;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.testng.Assert;
 import org.testng.annotations.*;
 import pages.easiyseleniumpage.AlertsPage;
+import pages.easiyseleniumpage.DropdownPage;
 import utilities.Driver;
 import utilities.ReusableMethods;
-
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-import java.util.NoSuchElementException;
 
 public class AlertsTest {
 
     String url = "https://www.seleniumeasy.com/test/";
-    DropdownTest dropdownTest = new DropdownTest();
+    DropdownPage dropdownTest = new DropdownPage();
     AlertsPage alertsPage = new AlertsPage();
     Actions actions = new Actions(Driver.getDriver());
 
     @BeforeTest
     public void beforeTest(){
         Driver.getDriver().get(url);
-        dropdownTest.alertClose.click();
+        try{
+            dropdownTest.alertClose.click();
+        }
+        catch (Exception e){
+
+        }
     }
 
     public void wrapUp(){

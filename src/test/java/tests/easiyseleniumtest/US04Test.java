@@ -7,6 +7,7 @@ import org.testng.Assert;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 import pages.easiyseleniumpage.AlertsPage;
+import pages.easiyseleniumpage.DropdownPage;
 import pages.easiyseleniumpage.US04Page;
 import utilities.Driver;
 import utilities.ReusableMethods;
@@ -14,15 +15,19 @@ import utilities.ReusableMethods;
 public class US04Test {
 
     String url = "https://www.seleniumeasy.com/test/";
-    DropdownTest dropdownTest = new DropdownTest();
+    DropdownPage dropdownTest = new DropdownPage();
     AlertsPage alertsPage = new AlertsPage();
     Actions actions = new Actions(Driver.getDriver());
     US04Page us04Page = new US04Page();
-
     @BeforeTest
     public void beforeTest(){
         Driver.getDriver().get(url);
-        dropdownTest.alertClose.click();
+        try{
+            dropdownTest.alertClose.click();
+        }
+        catch (Exception e){
+
+        }
     }
 
     public void wrapUp(){
