@@ -83,7 +83,9 @@ public class DropdownTest {
             dropdownTest.printMeAll.click();
             //Assert.assertTrue(dropdownTest.cityesResultText.getText().contains(cityes.get(i)));
         }
+
     }
+
 
 
 
