@@ -1,0 +1,35 @@
+# Created at 2021-03-12T22:29:30.835
+TestSet has not finished before stream error has appeared >> initializing exit by non-null configuration: DEFAULT
+java.io.EOFException
+	at java.base/java.io.DataInputStream.readInt(DataInputStream.java:396)
+	at org.apache.maven.surefire.booter.MasterProcessCommand.decode(MasterProcessCommand.java:115)
+	at org.apache.maven.surefire.booter.CommandReader$CommandRunnable.run(CommandReader.java:391)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+
+
+# Created at 2021-03-12T22:29:54.955
+Unexpected IOException with stream: [Java, C++, C, Scheme, ColdFusion, Scala, COBOL, AppleScript, Perl, Erlang, Groovy, BASIC, Fortran, JavaScript, Haskell, PHP, Ruby, ActionScript, Lisp, Asp, Clojure, Python]
+
+# Created at 2021-03-12T22:29:54.957
+Unexpected IOException with stream: 
+
+
+# Created at 2021-03-12T22:29:54.959
+Unexpected IOException with stream: 22
+
+# Created at 2021-03-12T22:29:54.960
+Unexpected IOException with stream: 
+
+
+# Created at 2021-03-12T22:29:54.962
+Unexpected IOException: 6,1,tests.AutoCompleteTest,defaultFuncionality(tests.AutoCompleteTest),null,null,null
+
+
+# Created at 2021-03-12T22:30:11.115
+Unexpected IOException: 5,1,tests.DatePickerTest,animationsTest(tests.DatePickerTest),tests.DatePickerTest,null,null
+
+
+# Created at 2021-03-12T22:30:15.744
+Unexpected IOException: 6,1,tests.DatePickerTest,animationsTest(tests.DatePickerTest),null,null,null
+
+
