@@ -62,7 +62,6 @@ public class US06Test {
         Assert.assertTrue(us06Page.resultRow.getText().contains("Mike"));
     }
 
-
     @Test
     public void TC0603(){
         wrapUp();
@@ -73,15 +72,15 @@ public class US06Test {
         }
         us06Page.filterLink.click();
         ReusableMethods.waitFor(1);
-        for (int i=1;i<us06Page.inputTextBoxes.size();i++){
-            Assert.assertTrue(us06Page.inputTextBoxes.get(i).isEnabled());
+        for (WebElement w : us06Page.inputTextBoxes){
+            Assert.assertTrue(w.isEnabled());
         }
         us06Page.inputTextBoxes.get(3).sendKeys("B");
-        for(WebElement w : us06Page.results){
+        for(WebElement w : us06Page.result2){
+            Assert.assertTrue(w.getText().startsWith("B"));
+            System.out.println(w.getText());
             Assert.assertTrue(w.getText().contains("Brigade")||w.getText().contains("Byron") );
         }
-
-
     }
 
 }
