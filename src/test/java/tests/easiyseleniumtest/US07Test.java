@@ -10,7 +10,6 @@ import org.testng.annotations.Test;
 import pages.easiyseleniumpage.*;
 import utilities.Driver;
 import utilities.ReusableMethods;
-
 import java.util.ArrayList;
 import java.util.List;
 
@@ -47,6 +46,9 @@ public class US07Test {
         ReusableMethods.waitFor(1);
         Assert.assertEquals(us07Page.allCards.size(),5);
         us07Page.orangeButton.click();
+//        if (!w.getAttribute("style").equals("display: none;")) {
+//            count++;//
+//        }
         ReusableMethods.waitFor(1);
         Assert.assertEquals(us07Page.orangeCards.size(),2);
     }
@@ -83,6 +85,5 @@ public class US07Test {
             }
         }
         Assert.assertEquals(allCityData.size(),4);
-
     }
 }
