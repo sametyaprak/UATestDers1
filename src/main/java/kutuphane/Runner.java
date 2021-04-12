@@ -34,7 +34,7 @@ public class Runner {
                 case 4 : searchABook();
                     break;
                 case 5 :    System.out.println("have a good day");
-                            System.exit(1);
+                            System.exit(0);
                     break;
                 default:
                     System.out.println("wrong input");
