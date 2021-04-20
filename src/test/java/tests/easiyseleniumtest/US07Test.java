@@ -19,6 +19,7 @@ public class US07Test {
     AlertsPage alertsPage = new AlertsPage();
     Actions actions = new Actions(Driver.getDriver());
     US07Page us07Page = new US07Page();
+
     @BeforeTest
     public void beforeTest(){
         Driver.getDriver().get(url);
