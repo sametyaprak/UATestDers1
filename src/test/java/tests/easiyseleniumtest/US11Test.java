@@ -42,15 +42,11 @@ public class US11Test {
     @Test
     void tc1101(){
         wrapUp();
-
         ReusableMethods.waitFor(1);
         us11Page.drangAndDropLink.click();
         ReusableMethods.waitFor(1);
         actions.clickAndHold(us11Page.draggableElements).perform();
         ReusableMethods.waitFor(1);
         actions.moveToElement(us11Page.dropArea).perform();
-
-
     }
-
 }
